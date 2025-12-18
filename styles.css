@@ -1,0 +1,527 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ibarra Real Nova', Georgia, serif;
+    background: linear-gradient(180deg, rgba(27, 17, 17, 0.99) 17.79%, #4A1515 54.81%, rgba(115, 20, 20, 0.8) 83.18%);
+    color: #FFFFFF;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: 'Ibarra Real Nova', Georgia, serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+    border-bottom-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    border-radius: 122px;
+    object-fit: cover;
+}
+
+/* About Section */
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.about-section {
+    margin: 80px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-image {
+    flex: 0 0 auto;
+}
+
+.profile-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-title {
+    font-family: 'Gloock', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+/* Portfolio Section */
+.container-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.portfolio-section {
+    margin: 80px 0;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.project {
+    margin-bottom: 60px;
+}
+
+.project-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.project-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Astra Project Specific */
+.astra-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.astra-logo-section {
+    flex: 0 0 45%;
+}
+
+.astra-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+}
+
+.astra-text-section {
+    flex: 1;
+}
+
+.astra-description {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.astra-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-img {
+    flex: 1;
+    min-width: 180px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Closing Section */
+.container-closing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.closing-section {
+    margin: 80px 0;
+}
+
+.closing-title {
+    font-family: 'Gloock', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.closing-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars-left,
+.stars-right {
+    flex: 0 0 auto;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.closing-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    color: #FFFFFF;
+    flex: 1;
+    max-width: 700px;
+}
+
+/* Contact Section */
+.container-contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.contact-section {
+    background: linear-gradient(180deg, rgba(34, 4, 4, 0.98) 0%, rgba(20, 0, 0, 0.95) 100%);
+    padding: 60px 40px;
+    border-radius: 122px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.contact-title {
+    font-family: 'Gloock', serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+.contact-icon {
+    max-width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.contact-link-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #FFFFFF;
+}
+
+.contact-link-text a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link-text a:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container-about,
+    .container-portfolio,
+    .container-closing,
+    .container-contact {
+        padding: 0 30px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .astra-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .astra-logo-section {
+        flex: 0 0 auto;
+        max-width: 300px;
+    }
+
+    .section-title {
+        font-size: 60px;
+    }
+
+    .closing-title {
+        font-size: 60px;
+    }
+
+    .contact-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-about,
+    .container-portfolio,
+    .container-closing,
+    .container-contact {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 45px;
+    }
+
+    .about-text,
+    .astra-description,
+    .closing-text {
+        font-size: 16px;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .closing-title {
+        font-size: 45px;
+    }
+
+    .closing-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stars-left,
+    .stars-right {
+        max-width: 80px;
+    }
+
+    .contact-title {
+        font-size: 32px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .astra-products {
+        flex-direction: column;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-about,
+    .container-portfolio,
+    .container-closing,
+    .container-contact {
+        padding: 0 15px;
+    }
+
+    .section-title,
+    .closing-title {
+        font-size: 32px;
+    }
+
+    .about-text,
+    .astra-description,
+    .closing-text {
+        font-size: 14px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-link-text {
+        font-size: 16px;
+    }
+
+    .closing-wrapper {
+        gap: 15px;
+    }
+
+    .stars-left,
+    .stars-right {
+        max-width: 60px;
+    }
+}
